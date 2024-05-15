@@ -20,5 +20,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "recoil": "^0.7.7"
+  }
 }
