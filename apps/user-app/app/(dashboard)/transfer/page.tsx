@@ -26,6 +26,12 @@ async function  onRampTransactions(){
             userId:Number(session?.user?.id)
         },
     })
+    interface transactionType {
+        startTime: string;
+        amount: number;
+        status: string;
+        provider:string
+    }
     
     return transactions.map(txn=>({
         time: txn.startTime,
